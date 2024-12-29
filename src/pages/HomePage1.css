@@ -1,0 +1,219 @@
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Stack content vertically on smaller screens */
+  body {
+    background-color: #000000; /* Muted lavender tone */
+  }
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+background-color: #000000;
+  
+  /* background-color: rgb(240, 157, 48); */
+  text-align: center;
+  /* background: linear-gradient(to left, #ff7e5f, #7bfec1, #ff7e5f);  Example gradient */
+}
+
+.hero-content {
+  max-width: 100%;
+  /* Take full width on smaller screens */
+  margin-bottom: 20px;
+  /* Add margin to separate content */
+}
+
+.hero-content h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #d1f8f2;
+  width: fit-content;
+}
+
+/*
+.hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #d1f8f2;
+  border-right: 0.15em solid #4d4949;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+ */
+#typing-text {
+  display: inline-block;
+  border-right: 0.15rem solid #4d494d;
+  font-size: 3.5rem;
+  animation: blink-caret 0.75s step-end infinite;
+  /* Adjusted to match blink speed */
+  color: transparent;
+  background-image: linear-gradient(to right, blue, red);
+  -webkit-background-clip: text;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+}
+
+
+.hero-content p {
+  font-size: 2.5em;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  color: #FDA7DA;
+}
+
+.btn-learn-more {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #3b383844;
+  color: #15fff3;
+  text-decoration: none;
+  /* Simplify border declaration */
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(240, 4, 4, 0.664);
+}
+
+.btn-learn-more:hover {
+  background-image: linear-gradient(to right, blue, red);
+  color: #f1efef;
+}
+
+.hero-image {
+  max-width: 100%;
+  background-image: url('./imgs.png');
+  margin-top: 20px;
+  margin-left: 20px;
+ animation: changeImage 2s infinite;
+}
+@keyframes changeImage{
+  0%{
+    background-image: url('');
+  }
+  50%{
+    image:url('./imgs.png');
+  }
+}
+
+.hero-image img {
+  width: 100%;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px rgb(255, 22, 5);
+  border-style: 5px rgb(0, 0, 0);
+  padding: 2px;
+  animation: changecolor 1s ease-in-out linear infinite;
+}
+
+@keyframes changecolor {
+  0% {
+    box-shadow: 0px 0px 25px rgb(255, 22, 5);
+  }
+
+  20% {
+    box-shadow: 0px 0px 25px rgb(5, 255, 159);
+  }
+
+  40% {
+    box-shadow: 0px 0px 25px rgb(255, 22, 5);
+  }
+
+  60% {
+    box-shadow: 0px 0px 25px rgb(5, 255, 193);
+  }
+
+  80% {
+    box-shadow: 0px 0px 25px rgb(255, 22, 5);
+  }
+
+  100% {
+    box-shadow: 0px 0px 25px rgb(5, 255, 201);
+  }
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    /* Align content side by side on larger screens */
+    text-align: left;
+    /* Align text to the left on larger screens */
+  }
+
+  .hero-content {
+    max-width: 50%;
+    /* Half of the screen width */
+    margin-bottom: 0;
+    /* Remove margin on larger screens */
+  }
+
+  .hero-image {
+    max-width: 40%;
+    /* Adjust image size on larger screens */
+    margin-top: 0;
+    /* Remove margin on larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em;
+    /* Reduce font size on smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 1em;
+    /* Reduce font size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8em;
+    /* Further reduce font size on very small screens */
+  }
+
+  .hero-content p {
+    font-size: 0.9em;
+    /* Further reduce font size on very small screens */
+  }
+}
+
+.time {
+  margin-top: 2px;
+  display: block;
+  position: absolute;
+  top: 110px;
+  left: 5px;
+
+}

@@ -1,0 +1,225 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: #d13939;
+  color: #fff;
+  border-bottom: 1px white;
+  height: fit-content;
+   
+   margin-bottom: 0.5px;
+}
+
+.navbar .logo a {
+  font-size: 2.5em;
+  color: #3366f5;
+  font-weight: bold;
+  
+    display: flex;
+   
+   
+}
+
+
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+}
+
+.navbar .nav-links li a {
+  color: #06ffd5;
+  text-decoration: none;
+  font-size: 1.2em;
+ /* border: 2px solid #00ffbf;  */
+  border-radius: 10%;
+
+  padding: 5px;
+
+  display: inline-flexbox;
+  transition: color 0.3s ease;
+  box-shadow: 5px 5px 9px hsl(108, 39%, 45%);
+  box-shadow: 0 0 8px #00ffbf;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ff6f61;
+
+  border-width: 2px solid #007bff;
+  /* Border under active link */
+  padding-bottom: 5px;
+  border-color: #007bff;
+  box-shadow: 0 0 20px #ff6f61;
+}
+
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #07ffc9;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+  }
+}
+
+.navbar .nav-links .active {
+  color: #007bff;
+  ;
+  /* Border under active link */
+
+  box-shadow: 0 0 15px #007bff;
+}
+
+
+
+/* SOCIAL ICONS  */
+
+.Social-media .icons {
+  display: flex;
+  gap: 20px;
+}
+
+.Social-media .icons a {
+  color: #47ffd7;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Social-media .icons a .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.Social-media .icons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(162, 100%, 53%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+/*instagram */
+.Social-media .icons a .layer span.fab {
+
+
+  background-color: #52535500;
+  border: 2px solid hsl(19, 100%, 50%);
+  background-size: cover;
+  background-image: url("./images/instaa.png");
+  box-shadow: 2px 2px 2px rgb(238, 103, 126);
+
+}
+/*linkedin */
+.Social-media .icons a .layer span.linkedin {
+  background-color: #0c2ce4;
+  border: 2px solid hsl(160, 100%, 50%);
+  background-size: cover;
+  background-image: url("./images/lin.png");
+  box-shadow: 2px 2px 2px #0bffde;
+}
+/*Github */
+.Social-media .icons a .layer span.Github {
+  background-color: #484a53;
+  border: 2px solid rgb(255, 255, 255);
+  background-size: cover;
+  background-image: url("./images/github.png");
+  box-shadow: 2px 2px 2px #ffffff;
+}
+
+
+.Social-media .icons a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.Social-media .icons a:hover .layer span:nth-child(1) {
+  opacity: 1;
+}
+
+.Social-media .icons a:hover .layer span:nth-child(2) {
+  opacity: 1;
+  transform: translate(5px, -5px);
+}
+
+.Social-media .icons a:hover .layer span:nth-child(3) {
+  opacity: 1;
+  transform: translate(10px, -10px);
+}
+
+.Social-media .icons a:hover .layer span:nth-child(4) {
+  opacity: 1;
+  transform: translate(15px, -15px);
+}
+/*     layers for icons     */
+.Social-media .icons .instagram .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(357, 100%, 53%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.Social-media .icons .linkedin .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(180, 100%, 50%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.Social-media .icons .Github .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+
+
+
+.navbar .navtime {
+  margin-top: 2px;
+  margin-left: 5px;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+ 
+}

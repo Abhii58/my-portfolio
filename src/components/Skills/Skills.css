@@ -1,0 +1,108 @@
+/* General Layout */
+.skills-page {
+  padding: 50px;/*
+  background: linear-gradient(
+    to bottom right,
+    #a3a3ad,  
+    #9a91c9,  
+    #d1b4e2,  
+    #e6d3c2   
+  );*/
+  background-size: cover; 
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  font-family: 'Arial', sans-serif; 
+  color: #fff; 
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Adjusted for responsiveness */
+  gap: 30px; /* Added gap for better spacing */
+  width: 100%; /* Ensure grid spans full container */
+  max-width: 1200px; /* Optional: Limit grid width */
+  margin: 0 auto;
+}
+
+/* Skill Card */
+.skills-card {
+  /*background: linear-gradient(90deg, #363232, #ab2ae7);*/
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.616);
+  padding: 0px;
+  padding-top:0;
+  width: 400px;
+  transition: transform 0.3s ease;
+ 
+}
+
+.skills-card:hover {
+  transform: translateY(-10px);
+}
+
+.skills-header {
+  /*background: linear-gradient(to right, #6a11cb, #6f6f70);*/
+  background: rgb(71, 70, 70);
+  border-radius: 12px 12px 0 0;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.skills-header h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  color:#fff;
+}
+
+.skills-description {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+/* Skill Icons */
+.skills-icons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon-placeholder {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #363232, #d187f3);
+  padding: 10px;
+  border-radius: 50%;
+  color: #000000;
+}
+
+.skill-icon p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 600;
+}
