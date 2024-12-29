@@ -15,7 +15,7 @@ const projectsData = [
   {
     title: 'Dynamic Event Calendar',
     description: 'Created a React.js application with features like event management, calendar navigation, and local Storage data persistence using React.js, Context API, local-Storage, Netlify.Implemented a clean UI - components and deployed on Netlify.Enabled adding, editing, and deleting events with detailed forms.',
-    link: '#'
+    link: 'https://calendar-ab.netlify.app'
   },
   {
     title: 'Stock price predictor',
